@@ -1,0 +1,155 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+:root {
+  --primaryColor: #ee6055;
+  --secondaryColor: #544890;
+  --darkColor: #333;
+  --backgroudColor: #fcf7f0;
+  --secondaryBackgroundColor: #f6e4ca;
+  --divider: var(--darkColor) 1px solid;
+  --hightlightColor: var(--primaryColor);
+
+  cursor: default;
+  scroll-behavior: smooth;
+}
+
+/*  --- General --- */
+body {
+  transition: background-color 0.4s, color 0.4s;
+  background-color: var(--backgroudColor);
+  color: var(--darkColor);
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+}
+section {
+  padding: 10px 15px;
+}
+.maxWidth {
+  max-width: 1350px;
+  margin: auto;
+}
+
+#portait {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  height: 250px;
+  width: 250px;
+  margin: 20px auto;
+}
+
+header h1 {
+  text-transform: uppercase;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+/* --- Headers --- */
+h1,
+h2,
+h3 {
+  text-transform: capitalize;
+  padding-bottom: 0.5rem;
+  font-family: "SUSE mono", sans-serif;
+}
+h1 {
+  text-transform: uppercase;
+}
+h2 {
+  border-bottom: var(--divider);
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+footer {
+  border-top: var(--divider);
+
+  padding: 0 15px;
+}
+.contact {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+a {
+  text-decoration: none;
+  color: var(--secondaryColor);
+  font-style: italic;
+}
+
+.highlight {
+  color: var(--darkColor);
+  font-weight: bold;
+}
+
+.tagline {
+  font-style: italic;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: var(--hightlightColor);
+  font-family: "SUSE mono", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  border-bottom: var(--divider);
+  padding: 0 15px;
+}
+.colorHighlight {
+  color: var(--hightlightColor);
+}
+
+li {
+  margin-bottom: 8px;
+  list-style-type: none;
+  margin-left: 20px;
+  text-transform: capitalize;
+}
+h3 {
+  margin-top: 15px;
+}
+
+#projects ul {
+  margin: auto 0;
+}
+
+.partialDivider {
+  border-bottom: 3px dotted var(--primaryColor);
+  margin: 20px 0;
+}
+
+#intro a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--primaryColor);
+  background-color: var(--darkColor);
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-family: "SUSE mono", sans-serif;
+  font-style: normal;
+  display: grid;
+  margin: 10px auto;
+  width: fit-content;
+}
