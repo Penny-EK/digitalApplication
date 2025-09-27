@@ -25,6 +25,16 @@ img {
   scroll-behavior: smooth;
 }
 
+.darkmode {
+  --primaryColor: #544890;
+  --secondaryColor: #ee6055;
+  --darkColor: #fcf7f0;
+  --backgroudColor: #333;
+  --secondaryBackgroundColor: #504848;
+  --divider: var(--darkColor) 1px solid;
+  --hightlightColor: var(--secondaryColor);
+}
+
 /*  --- General --- */
 body {
   transition: background-color 0.4s, color 0.4s;
@@ -139,6 +149,22 @@ h3 {
   margin: 20px 0;
 }
 
+/* scroll test */
+.scrollWrapper {
+  height: 78vh;
+  overflow-y: scroll;
+  scroll-snap-type: y proximity;
+  scroll-behavior: smooth;
+}
+
+.scrollSection {
+  height: 100%;
+  scroll-snap-align: start;
+  &:nth-child(even) {
+    background-color: var(--secondaryBackgroundColor);
+  }
+}
+
 #intro a {
   font-size: 1.2rem;
   font-weight: bold;
@@ -152,4 +178,34 @@ h3 {
   display: grid;
   margin: 10px auto;
   width: fit-content;
+}
+
+#themeSwitcher {
+  height: 40px;
+  aspect-ratio: 1/1;
+  width: auto;
+  padding: 0;
+  border-radius: 50%;
+  background-color: var(--darkColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 20px;
+  right: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#moonIcon {
+  display: inline;
+}
+#sunIcon {
+  display: none;
+}
+
+body.darkmode #moonIcon {
+  display: none;
+}
+body.darkmode #sunIcon {
+  display: inline;
 }
