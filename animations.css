@@ -1,12 +1,12 @@
 /* --- Theme Switcher --- */
 .darkmode {
-  --primaryColor: #544890;
-  --secondaryColor: #ee6055;
-  --darkColor: #fcf7f0;
-  --backgroudColor: #333;
-  --secondaryBackgroundColor: #504848;
+  --primaryColor: #a8fae0;
+  --secondaryColor: #942c4f;
+  --darkColor: #ffffff;
+  --backgroudColor: #151933;
+  --secondaryBackgroundColor: #942c4f;
   --divider: var(--darkColor) 1px solid;
-  --hightlightColor: var(--secondaryColor);
+  --hightlightColor: var(--primaryColor);
 }
 
 #themeSwitcher {
@@ -15,7 +15,7 @@
   width: auto;
   padding: 0;
   border-radius: 50%;
-  background-color: var(--darkColor);
+  background-color: var(--primaryColor);
   display: flex;
   justify-content: center;
   align-items: center;

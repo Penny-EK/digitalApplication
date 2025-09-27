@@ -12,7 +12,7 @@ img {
   padding-bottom: 0;
 }
 
-:root {
+/* :root {
   --primaryColor: #ee6055;
   --secondaryColor: #544890;
   --darkColor: #333;
@@ -20,6 +20,25 @@ img {
   --secondaryBackgroundColor: #f6e4ca;
   --divider: var(--darkColor) 1px solid;
   --hightlightColor: var(--primaryColor);
+
+  cursor: default;
+  scroll-behavior: smooth;
+} */
+
+:root {
+  --primaryColor: #fe558e;
+  --secondaryColor: #a8fae0;
+  --darkColor: #333;
+  --lightColor: #ffffff;
+
+  --textColor: var(--darkColor);
+  --linkColor: var(--primaryColor);
+
+  --backgroudColor: var(--lightColor);
+  --secondaryBackgroundColor: var(--secondaryColor);
+  --hightlightColor: var(--primaryColor);
+
+  --divider: var(--darkColor) 1px solid;
 
   cursor: default;
   scroll-behavior: smooth;
@@ -44,9 +63,11 @@ section {
 #portait {
   aspect-ratio: 9/12;
   object-fit: cover;
-  height: min(300px, 40vh);
+  height: 30vw;
   width: auto;
   margin: 20px auto;
+  min-height: 250px;
+  border-radius: 5px;
 }
 
 header h1 {
@@ -86,23 +107,22 @@ footer {
   border-top: var(--divider);
 
   padding: 0 15px;
-}
-.contact {
+
   display: flex;
   gap: 15px;
-  margin-top: 10px;
   align-items: center;
   flex-wrap: wrap;
 }
-a {
-  text-decoration: none;
-  color: var(--secondaryColor);
-  /* font-style: italic; */
+footer a,
+footer p {
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
-.highlight {
-  color: var(--darkColor);
-  font-weight: bold;
+a {
+  text-decoration: none;
+  color: var(--linkColor);
+  /* font-style: italic; */
 }
 
 .tagline {
@@ -144,8 +164,8 @@ li {
 #intro a {
   font-size: 1.2rem;
   font-weight: bold;
-  color: var(--primaryColor);
-  background-color: var(--darkColor);
+  color: var(--textColor);
+  background-color: var(--primaryColor);
   padding: 5px 10px;
   border-radius: 5px;
   text-transform: uppercase;
@@ -159,5 +179,8 @@ li {
 @media (min-width: 600px) {
   section {
     display: flex;
+  }
+  #portait {
+    min-height: 300px;
   }
 }
