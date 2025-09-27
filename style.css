@@ -86,21 +86,62 @@ h3 {
 }
 h1 {
   text-transform: uppercase;
-  font-size: min(6vw, 2rem);
+  font-size: max(24px, 2vw);
 }
 h2 {
   border-bottom: var(--divider);
   margin-top: 30px;
   margin-bottom: 10px;
+  font-size: max(18px, 1.3vw);
 }
 
 h3 {
   margin-top: 15px;
+  font-size: max(15px, 1.2vw);
 }
 
 p {
+  font-size: max(13px, 1vw);
+
   margin-top: 10px;
   margin-left: 10px;
+}
+
+li {
+  margin-bottom: 8px;
+  list-style-type: none;
+  margin-left: 20px;
+  text-transform: capitalize;
+  font-size: max(12px, 1vw);
+}
+
+a {
+  text-decoration: none;
+  color: var(--linkColor);
+  /* font-style: italic; */
+  transition: 0.4s;
+}
+
+a:hover {
+  text-decoration: underline wavy;
+  transition: 0.4s;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  border-bottom: var(--divider);
+  padding: 0 15px;
+}
+
+.tagline {
+  font-style: italic;
+  margin-bottom: 10px;
+  color: var(--hightlightColor);
+  font-family: "SUSE mono", sans-serif;
+  font-size: max(18px, 1.3vw);
 }
 
 footer {
@@ -119,37 +160,8 @@ footer p {
   margin-left: 10px;
 }
 
-a {
-  text-decoration: none;
-  color: var(--linkColor);
-  /* font-style: italic; */
-}
-
-.tagline {
-  font-style: italic;
-  margin-bottom: 10px;
-  font-size: 1.2rem;
-  color: var(--hightlightColor);
-  font-family: "SUSE mono", sans-serif;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 50px;
-  border-bottom: var(--divider);
-  padding: 0 15px;
-}
 .colorHighlight {
   color: var(--hightlightColor);
-}
-
-li {
-  margin-bottom: 8px;
-  list-style-type: none;
-  margin-left: 20px;
-  text-transform: capitalize;
 }
 
 #projects ul {
@@ -162,7 +174,7 @@ li {
 }
 
 #intro a {
-  font-size: 1.2rem;
+  font-size: max(18px, 1.3vw);
   font-weight: bold;
   color: var(--textColor);
   background-color: var(--primaryColor);
@@ -174,6 +186,11 @@ li {
   display: grid;
   margin: 10px auto;
   width: fit-content;
+}
+#intro a:hover {
+  background-color: var(--secondaryColor);
+  transition: 0.4s;
+  text-decoration: none;
 }
 
 @media (min-width: 600px) {
