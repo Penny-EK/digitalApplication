@@ -1,0 +1,18 @@
+@media (min-width: 600px) {
+  .grid1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+  .grid1-1-1 h3 {
+    margin: auto 0;
+  }
+}
+
+.col {
+  margin-bottom: 20px;
+}
