@@ -149,13 +149,11 @@ header {
 
 footer {
   border-top: var(--divider);
-
-  padding: 0 15px;
-
-  display: flex;
+  padding: 15px;
   gap: 15px;
-  align-items: center;
-  flex-wrap: wrap;
+
+  /* align-items: center;
+  flex-wrap: wrap; */
 }
 footer a,
 footer p {
@@ -213,5 +211,18 @@ header a {
   }
   #portait {
     min-height: 300px;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 11vh;
+  }
+  footer ul {
+    display: contents;
+  }
+  header {
+    height: 11vh;
   }
 }
