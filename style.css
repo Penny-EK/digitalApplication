@@ -49,24 +49,6 @@ section {
   margin: auto;
 }
 
-#portait {
-  aspect-ratio: 9/12;
-  object-fit: cover;
-  height: 30vw;
-  width: auto;
-  margin: 20px auto;
-  min-height: 250px;
-  border-radius: 5px;
-}
-
-/* Header */
-
-header h1 {
-  text-transform: uppercase;
-  padding: 1rem;
-  font-size: 1rem;
-}
-
 /*  Headers  */
 h1,
 h2,
@@ -119,6 +101,8 @@ a:hover {
   transition: 0.4s;
 }
 
+/* header */
+
 header {
   display: flex;
   justify-content: space-between;
@@ -128,14 +112,16 @@ header {
   padding: 0 15px;
 }
 
-.tagline {
-  font-style: italic;
-  margin-bottom: 10px;
-  color: var(--hightlightColor);
-  font-family: "SUSE mono", sans-serif;
-  font-size: max(18px, 1.3vw);
+header h1 {
+  text-transform: uppercase;
+  padding: 1rem;
+  font-size: 1rem;
+}
+header a {
+  text-decoration: none;
 }
 
+/* footer */
 footer {
   border-top: var(--divider);
   padding: 15px;
@@ -146,19 +132,24 @@ footer p,
 footer li {
   margin: 0;
 }
-.colorHighlight {
+
+/* introduction */
+#portait {
+  aspect-ratio: 9/12;
+  object-fit: cover;
+  height: 30vw;
+  width: auto;
+  margin: 20px auto;
+  min-height: 250px;
+  border-radius: 5px;
+}
+.tagline {
+  font-style: italic;
+  margin-bottom: 10px;
   color: var(--hightlightColor);
+  font-family: "SUSE mono", sans-serif;
+  font-size: max(18px, 1.3vw);
 }
-
-#projects ul {
-  margin: auto 0;
-}
-
-.partialDivider {
-  border-bottom: var(--dottedDivider);
-  margin: 20px 0;
-}
-
 #intro a {
   font-size: max(18px, 1.3vw);
   font-weight: bold;
@@ -178,17 +169,33 @@ footer li {
   transition: 0.4s;
   text-decoration: none;
 }
-#skills p {
-  margin: 10px 0 25px 0;
-}
+
+/* about me */
 .funFacts {
   background-color: var(--backgroudColor);
   padding: 10px;
 }
 
-header a {
-  text-decoration: none;
+/* skills */
+#skills p {
+  margin: 10px 0 25px 0;
 }
+
+/* projects */
+#projects ul {
+  margin: auto 0;
+}
+
+/* formatting */
+.colorHighlight {
+  color: var(--hightlightColor);
+}
+
+.partialDivider {
+  border-bottom: var(--dottedDivider);
+  margin: 20px 0;
+}
+
 /* computer view */
 @media (min-width: 600px) {
   section {
