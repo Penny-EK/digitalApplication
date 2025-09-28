@@ -19,12 +19,29 @@ function themeSwitcher() {
 }
 
 // fun fact generator
-
 document.addEventListener("DOMContentLoaded", funFact);
 
 function funFact() {
   const funFactDisplay = document.getElementById("funFactContainer");
-  const funFacts = ["Jeg elsker at vandre i naturen.", "I 2024 så jeg 15 forskellige koncerter.", "Jeg elsker brætspil.", "Jeg kan godt lide at lave mad.", "Jeg har en stor samling af Lego", "Min yndlingsfilm er burn after reading", "Mit yndlingsband er Red Hot Chili Peppers", "Jeg er navgivet efter filmen 'almost famous'", "Min interesse for kodning startede i gymnasiet.", "Min interesse for design startede i 5. klasse.", "Jeg kan godt lide at læse bøger, især science fiction og biografier fra rockstjerner🤘🏼.", "efter multimediedesign vil jeg gerne læse webudvikling"];
+  const funFacts = [
+    "Jeg elsker at vandre i naturen.",
+    "I 2024 så jeg 15 forskellige koncerter.",
+    "Jeg elsker brætspil.",
+    "Jeg kan godt lide at lave mad.",
+    "Jeg har en stor samling af Lego",
+    "Min yndlingsfilm er 'burn after reading'",
+    "Mit yndlingsband er Red Hot Chili Peppers",
+    "Jeg er navgivet efter filmen 'almost famous'",
+    "Min interesse for kodning startede i gymnasiet.",
+    "Min interesse for design startede i 5. klasse.",
+    "Jeg kan godt lide at læse bøger, især science fiction og biografier om rockstjerner🤘🏼.",
+    "Efter multimediedesign vil jeg gerne læse webudvikling",
+    "Jeg har en kat som hedder Carlo Fernando.",
+    "Jeg kan ikke fordrage jordbær.",
+    "Jeg elsker at danse.",
+    "Min yndlings slags is er pistacie-is",
+    "Jeg så engang 'Tim Burtons the nightmare before christmas' 19 gange på en måned",
+  ];
   function displayRandomFunFact() {
     const randomFact = Math.floor(Math.random() * funFacts.length);
     funFactDisplay.textContent = funFacts[randomFact];
