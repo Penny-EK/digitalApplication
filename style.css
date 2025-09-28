@@ -39,6 +39,7 @@ img {
   --hightlightColor: var(--primaryColor);
 
   --divider: var(--darkColor) 1px solid;
+  --dottedDivider: var(--darkColor) 1px dotted;
 
   cursor: default;
   scroll-behavior: smooth;
@@ -80,6 +81,7 @@ header h1 {
 h1,
 h2,
 h3 {
+  color: var(--textColor);
   text-transform: capitalize;
   padding-bottom: 0.5rem;
   font-family: "SUSE mono", sans-serif;
@@ -101,13 +103,14 @@ h3 {
 }
 
 p {
+  color: var(--textColor);
   font-size: max(13px, 1vw);
-
   margin-top: 10px;
   margin-left: 10px;
 }
 
 li {
+  color: var(--textColor);
   margin-bottom: 8px;
   list-style-type: none;
   margin-left: 20px;
@@ -169,14 +172,14 @@ footer p {
 }
 
 .partialDivider {
-  border-bottom: 3px dotted var(--primaryColor);
+  border-bottom: var(--dottedDivider);
   margin: 20px 0;
 }
 
 #intro a {
   font-size: max(18px, 1.3vw);
   font-weight: bold;
-  color: var(--textColor);
+  color: var(--backgroudColor);
   background-color: var(--primaryColor);
   padding: 5px 10px;
   border-radius: 5px;
@@ -192,7 +195,11 @@ footer p {
   transition: 0.4s;
   text-decoration: none;
 }
+#skills p {
+  margin: 10px 0 25px 0;
+}
 
+/* computer view */
 @media (min-width: 600px) {
   section {
     display: flex;
