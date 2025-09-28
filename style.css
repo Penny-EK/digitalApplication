@@ -12,19 +12,7 @@ img {
   padding-bottom: 0;
 }
 
-/* :root {
-  --primaryColor: #ee6055;
-  --secondaryColor: #544890;
-  --darkColor: #333;
-  --backgroudColor: #fcf7f0;
-  --secondaryBackgroundColor: #f6e4ca;
-  --divider: var(--darkColor) 1px solid;
-  --hightlightColor: var(--primaryColor);
-
-  cursor: default;
-  scroll-behavior: smooth;
-} */
-
+/* global const */
 :root {
   --primaryColor: #fe558e;
   --secondaryColor: #a8fae0;
@@ -71,13 +59,15 @@ section {
   border-radius: 5px;
 }
 
+/* Header */
+
 header h1 {
   text-transform: uppercase;
   padding: 1rem;
   font-size: 1rem;
 }
 
-/* --- Headers --- */
+/*  Headers  */
 h1,
 h2,
 h3 {
@@ -121,7 +111,6 @@ li {
 a {
   text-decoration: underline;
   color: var(--linkColor);
-  /* font-style: italic; */
   transition: 0.4s;
 }
 
@@ -151,16 +140,12 @@ footer {
   border-top: var(--divider);
   padding: 15px;
   gap: 15px;
-
-  /* align-items: center;
-  flex-wrap: wrap; */
 }
 footer a,
-footer p {
-  margin-top: 10px;
-  margin-left: 10px;
+footer p,
+footer li {
+  margin: 0;
 }
-
 .colorHighlight {
   color: var(--hightlightColor);
 }
@@ -185,8 +170,8 @@ footer p {
   font-family: "SUSE mono", sans-serif;
   font-style: normal;
   display: grid;
-  margin: 10px auto;
   width: fit-content;
+  margin: 20px auto;
 }
 #intro a:hover {
   background-color: var(--secondaryColor);
@@ -224,5 +209,10 @@ header a {
   }
   header {
     height: 11vh;
+  }
+  footer a,
+  footer p {
+    margin-top: 10px;
+    margin-left: 10px;
   }
 }

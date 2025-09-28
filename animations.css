@@ -53,6 +53,7 @@ body.darkmode #sunIcon {
 
 /* --- Scroll Animation --- */
 .scrollSection {
+  height: 100vh;
   &:nth-child(even) {
     background-color: var(--secondaryBackgroundColor);
   }
