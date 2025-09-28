@@ -52,18 +52,22 @@ body.darkmode #sunIcon {
 }
 
 /* --- Scroll Animation --- */
-
-.scrollWrapper {
-  height: 78vh;
-  overflow-y: scroll;
-  scroll-snap-type: y proximity;
-  scroll-behavior: smooth;
-}
-
 .scrollSection {
-  height: 100%;
-  scroll-snap-align: start;
   &:nth-child(even) {
     background-color: var(--secondaryBackgroundColor);
+  }
+}
+
+/* computer view */
+@media (min-width: 600px) {
+  .scrollWrapper {
+    height: 78vh;
+    overflow-y: scroll;
+    scroll-snap-type: y proximity;
+    scroll-behavior: smooth;
+  }
+  .scrollSection {
+    height: 100%;
+    scroll-snap-align: start;
   }
 }

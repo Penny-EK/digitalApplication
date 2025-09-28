@@ -119,7 +119,7 @@ li {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: var(--linkColor);
   /* font-style: italic; */
   transition: 0.4s;
@@ -198,7 +198,14 @@ footer p {
 #skills p {
   margin: 10px 0 25px 0;
 }
+.funFacts {
+  background-color: var(--backgroudColor);
+  padding: 10px;
+}
 
+header a {
+  text-decoration: none;
+}
 /* computer view */
 @media (min-width: 600px) {
   section {
