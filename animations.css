@@ -1,14 +1,14 @@
 /* --- Theme Switcher --- */
 .darkmode {
-  --primaryColor: #a8fae0;
-  --secondaryColor: #fe558e;
+  --primaryColor: #fe8b55;
+  --secondaryColor: #29572d;
   --darkColor: #333;
   --lightColor: #ffffff;
 
   --textColor: var(--lightColor);
   --linkColor: var(--lightColor);
 
-  --backgroudColor: var(--darkColor);
+  --backgroundColor: var(--darkColor);
   --secondaryBackgroundColor: var(--secondaryColor);
   --hightlightColor: var(--primaryColor);
 
@@ -22,7 +22,6 @@
   width: auto;
   padding: 0;
   border-radius: 50%;
-  background-color: var(--primaryColor);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,16 +50,17 @@ body.darkmode #sunIcon {
   display: inline;
 }
 
-/* --- Scroll Animation --- */
+/* --- Scroll Animation ---
 .scrollSection {
   height: 100vh;
   &:nth-child(even) {
     background-color: var(--secondaryBackgroundColor);
+    color: #ffffff;
   }
-}
+} */
 
 /* computer view */
-@media (min-width: 600px) {
+/* @media (min-width: 600px) {
   .scrollWrapper {
     height: 78vh;
     overflow-y: scroll;
@@ -71,4 +71,4 @@ body.darkmode #sunIcon {
     height: 100%;
     scroll-snap-align: start;
   }
-}
+} */
