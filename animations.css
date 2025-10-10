@@ -49,26 +49,3 @@ body.darkmode #moonIcon {
 body.darkmode #sunIcon {
   display: inline;
 }
-
-/* --- Scroll Animation ---
-.scrollSection {
-  height: 100vh;
-  &:nth-child(even) {
-    background-color: var(--secondaryBackgroundColor);
-    color: #ffffff;
-  }
-} */
-
-/* computer view */
-/* @media (min-width: 600px) {
-  .scrollWrapper {
-    height: 78vh;
-    overflow-y: scroll;
-    scroll-snap-type: y proximity;
-    scroll-behavior: smooth;
-  }
-  .scrollSection {
-    height: 100%;
-    scroll-snap-align: start;
-  }
-} */
