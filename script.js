@@ -29,7 +29,7 @@ function funFact() {
     "Jeg elsker brætspil.",
     "Jeg kan godt lide at lave mad.",
     "Jeg har en stor samling af LEGO.",
-    "Min yndlingsfilm er'Burn After Reading'.",
+    "Min yndlingsfilm er 'Burn After Reading'.",
     "Mit yndlingsband er Red Hot Chili Peppers.",
     "Jeg er navngivet efter filmen 'Almost Famous'.",
     "Min interesse for kodning startede i gymnasiet.",
