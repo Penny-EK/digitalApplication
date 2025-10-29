@@ -1,0 +1,47 @@
+/* --- Theme Switcher --- */
+.darkmode {
+  --primaryColor: #fe8b55;
+  --secondaryColor: #4060ff;
+
+  --textColor: var(--lightColor);
+  --linkColor: var(--lightColor);
+
+  --backgroundColor: var(--darkColor);
+  --hightlightColor: var(--primaryColor);
+}
+
+#themeSwitcher {
+  height: 30px;
+  aspect-ratio: 1/1;
+  width: auto;
+  padding: 0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--backgroundColor);
+  border: none;
+  cursor: pointer;
+  transition: 0.4s;
+  svg {
+    fill: var(--primaryColor);
+  }
+}
+#themeSwitcher:hover {
+  transition: 0.4s;
+  background-color: var(--secondaryColor);
+}
+
+#moonIcon {
+  display: inline;
+}
+#sunIcon {
+  display: none;
+}
+
+body.darkmode #moonIcon {
+  display: none;
+}
+body.darkmode #sunIcon {
+  display: inline;
+}

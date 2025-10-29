@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ansøgning Penny Kristiansen</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="layout.css" />
-    <link rel="stylesheet" href="animations.css" />
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="stylesheet" href="stylesheets/layout.css" />
+    <link rel="stylesheet" href="stylesheets/darkmode.css" />
     <script src="script.js"></script>
     <!-- SUSE Monos -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,7 +16,7 @@
   <body>
     <!-- header -->
     <header>
-      <a href=""><h1>Penny Kristiansen</h1></a>
+      <a href="#intro"><h1>Penny Kristiansen</h1></a>
       <button id="themeSwitcher">
         <!-- darkmode -->
         <svg id="moonIcon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z" /></svg>
@@ -26,46 +26,50 @@
     </header>
     <main>
       <!-- intro -->
-      <section id="intro" class="decoration">
-        <div class="grid1-1">
-          <div class="col">
-            <h2>Hello World!</h2>
-            <h1>Penny Kristiansen</h1>
-            <p class="tagline">Aspirerende frontend udvikler</p>
-            <p>- nysgerrig, kreativ og vild med webdesign. Her kan du hurtigt finde mine kontaktoplysninger og se, hvad jeg brænder for.</p>
+      <section id="intro">
+        <div class="innerContent">
+          <div class="grid1-1">
+            <div class="col">
+              <h2>Hello World!</h2>
+              <h1>Penny Kristiansen</h1>
+              <p class="tagline">Aspirerende frontend udvikler</p>
+              <p>- nysgerrig, kreativ og vild med webdesign. Her kan du hurtigt finde mine kontaktoplysninger og se, hvad jeg brænder for.</p>
 
-            <div class="btn">
-              <a href="#skills">Kompetencer</a>
-              <a href="#projects">Projekter</a>
+              <div class="btn">
+                <a href="#skills">Kompetencer</a>
+                <a href="#projects">Projekter</a>
+              </div>
             </div>
+            <img id="portait" src="pennyKristiansen.webp" alt="portræt billede af Penny Kristiansen" />
           </div>
-          <img id="portait" src="pennyKristiansen.webp" alt="portræt billede af Penny Kristiansen" />
         </div>
       </section>
 
       <!-- get to know me -->
-      <section id="whyMe" class="scrollSection">
-        <div class="grid1-1">
-          <div class="col">
-            <h2>Hvem er jeg?</h2>
-            <p>Kort om mig. Jeg er 21 år gammel. Jeg har stor interesse for film og musik, derudover vil jeg aldrig klage over en dag i naturen.</p>
-            <p>Jeg er en kreativ sjæl, der elsker at skabe og designe. Jeg er meget nysgerrig og elsker at lære nye ting, især når det kommer til kodning og webudvikling.</p>
-          </div>
-          <div class="col">
-            <h3>hvad vil jeg gerne?</h3>
-            <p>I mit kommende praktikforløb ønsker jeg at styrke mine kompetencer inden for frontend-udvikling og udvide min horisont inden for kodning. Jeg vil samtidig arbejde på at blive endnu mere komfortabel med UI/UX-design og skabe brugervenlige digitale oplevelser.</p>
-          </div>
-          <div class="col funFacts">
-            <h3>Fun facts om mig</h3>
-            <!-- gets content from script -->
-            <p id="funFactContainer"></p>
+      <section id="whyMe">
+        <div class="innerContent">
+          <div class="grid1-1">
+            <div class="col">
+              <h2>Hvem er jeg?</h2>
+              <p>Kort om mig. Jeg er 21 år gammel. Jeg har stor interesse for film og musik, derudover vil jeg aldrig klage over en dag i naturen.</p>
+              <p>Jeg er en kreativ sjæl, der elsker at skabe og designe. Jeg er meget nysgerrig og elsker at lære nye ting, især når det kommer til kodning og webudvikling.</p>
+            </div>
+            <div class="col">
+              <h3>hvad vil jeg gerne?</h3>
+              <p>I mit kommende praktikforløb ønsker jeg at styrke mine kompetencer inden for frontend-udvikling og udvide min horisont inden for kodning. Jeg vil samtidig arbejde på at blive endnu mere komfortabel med UI/UX-design og skabe brugervenlige digitale oplevelser.</p>
+            </div>
+            <div class="col funFacts">
+              <h3>Fun facts om mig</h3>
+              <!-- gets content from script -->
+              <p id="funFactContainer"></p>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- skills -->
-      <section id="skills" class="scrollSection">
-        <div class="maxWidth">
+      <section id="skills">
+        <div class="innerContent">
           <h2>kompetencer</h2>
           <p>Her er en lille oversigt over nogen af de ting jeg har arbejdet med:</p>
           <div class="grid1-1-1">
@@ -101,51 +105,53 @@
 
       <!-- previous projects -->
       <section id="projects">
-        <div class="maxWidth">
+        <div class="innerContent">
           <h2>tidligere projekter</h2>
-          <div class="grid1-1-1">
-            <!-- about: hillerød bowlsklub -->
-            <div class="projectCard">
-              <h3>Hillerød bowlsklub</h3>
-              <p>Eksamensprojektet på 2.semester omhandlede et komplet redesign af hillerød bowlsklub's hjemmeside. Produktet blev lavet i astro som jeg var hovedansvarlig for.</p>
-              <ul>
-                <li>
-                  <a href="https://hillerodbowls.netlify.app/" target="_blank">Hillerød Bowlklub redesign</a>
-                </li>
-                <li>
-                  <a href="https://github.com/Penny-EK/10_eksamen " target="_blank">Github Repository</a>
-                </li>
-              </ul>
-            </div>
+          <article>
+            <ul>
+              <!-- about: hillerød bowlsklub -->
+              <li class="projectCard">
+                <h3>Hillerød bowlsklub</h3>
+                <p>Eksamensprojektet på 2.semester omhandlede et komplet redesign af hillerød bowlsklub's hjemmeside. Produktet blev lavet i astro som jeg var hovedansvarlig for.</p>
+                <ul>
+                  <li>
+                    <a href="https://hillerodbowls.netlify.app/" target="_blank">Hillerød Bowlklub redesign</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Penny-EK/10_eksamen " target="_blank">Github Repository</a>
+                  </li>
+                </ul>
+              </li>
 
-            <!-- about: to-do list -->
-            <div class="projectCard">
-              <h3>To-do liste</h3>
-              <p>To-do liste, med fokus på arrays og funktioner som localStorage</p>
-              <ul>
-                <li>
-                  <a href="https://penny-ek.github.io/toDo/" target="_blank">To-do liste</a>
-                </li>
-                <li>
-                  <a href="https://github.com/Penny-EK/toDo" target="_blank">Github Repository</a>
-                </li>
-              </ul>
-            </div>
+              <!-- about: to-do list -->
+              <li class="projectCard">
+                <h3>To-do liste</h3>
+                <p>To-do liste, med fokus på arrays og funktioner som localStorage</p>
+                <ul>
+                  <li>
+                    <a href="https://penny-ek.github.io/toDo/" target="_blank">To-do liste</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Penny-EK/toDo" target="_blank">Github Repository</a>
+                  </li>
+                </ul>
+              </li>
 
-            <!-- about: cirkulær lab -->
-            <div class="projectCard">
-              <h3>cirkulær lab</h3>
-              <p>Et casearbejde med EK's Cirkulær lab, projektet blev lavet i astro og havde særligt fokus på at lave Fetche data fra Supabase</p>
-              <ul>
-                <li>
-                  <a href="https://circularlab-t09-g5.netlify.app/" target="_blank">Cirkulær lab redesign</a>
-                </li>
-                <li>
-                  <a href="https://github.com/multimediemartin/circular_lab" target="_blank">Github Repository</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+              <!-- about: cirkulær lab -->
+              <li class="projectCard">
+                <h3>cirkulær lab</h3>
+                <p>Et casearbejde med EK's Cirkulær lab, projektet blev lavet i astro og havde særligt fokus på at lave Fetche data fra Supabase</p>
+                <ul>
+                  <li>
+                    <a href="https://circularlab-t09-g5.netlify.app/" target="_blank">Cirkulær lab redesign</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/multimediemartin/circular_lab" target="_blank">Github Repository</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </article>
         </div>
       </section>
     </main>
