@@ -85,6 +85,7 @@ p {
   font-size: max(13px, 1cqw);
   margin-top: 10px;
   margin-left: 10px;
+  line-height: 150%;
 }
 
 li {
