@@ -1,18 +1,13 @@
 /* --- Theme Switcher --- */
 .darkmode {
   --primaryColor: #fe8b55;
-  --secondaryColor: #29572d;
-  --darkColor: #333;
-  --lightColor: #ffffff;
+  --secondaryColor: #4060ff;
 
   --textColor: var(--lightColor);
   --linkColor: var(--lightColor);
 
   --backgroundColor: var(--darkColor);
-  --secondaryBackgroundColor: var(--secondaryColor);
   --hightlightColor: var(--primaryColor);
-
-  --divider: var(--lightColor) 1px solid;
 }
 
 #themeSwitcher {
@@ -24,15 +19,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 20px;
-  right: 20px;
+  background-color: var(--backgroundColor);
   border: none;
   cursor: pointer;
   transition: 0.4s;
+  svg {
+    fill: var(--primaryColor);
+  }
 }
 #themeSwitcher:hover {
-  background-color: var(--secondaryColor);
   transition: 0.4s;
+  background-color: var(--secondaryColor);
 }
 
 #moonIcon {
@@ -47,23 +44,4 @@ body.darkmode #moonIcon {
 }
 body.darkmode #sunIcon {
   display: inline;
-}
-
-.projectCard {
-  display: flex;
-  width: 363px;
-  padding: 20px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 16px;
-  flex-shrink: 0;
-  border-radius: 12px;
-  background: #fff;
-  height: fit-content;
-  * {
-    color: var(--darkColor);
-  }
-  *:hover {
-    color: var(--primaryColor);
-  }
 }

@@ -15,9 +15,10 @@ img {
 /* global const */
 :root {
   --primaryColor: #4060ff;
+  --secondaryColor: #fe8b55;
+
   --primaryColor-hover: #2740bd;
 
-  --secondaryColor: var(--primaryColor);
   --darkColor: #333;
   --lightColor: #f9f8ff;
 
@@ -25,11 +26,9 @@ img {
   --linkColor: var(--primaryColor);
 
   --backgroundColor: var(--lightColor);
-  --secondaryBackgroundColor: var(--secondaryColor);
+
   --hightlightColor: var(--primaryColor);
 
-  --divider: var(--darkColor) 1px solid;
-  /* --dottedDivider: var(--darkColor) 1px dotted; */
   --border-radius: 5px;
 
   cursor: default;
@@ -123,7 +122,7 @@ header {
   background-color: var(--backgroundColor);
 
   h1 {
-    color: #000;
+    color: var(--textColor);
     font-family: "SUSE Mono";
     font-size: 1.25rem;
     font-style: normal;
@@ -136,9 +135,6 @@ header {
       text-decoration: none;
     }
   }
-  svg {
-    fill: #4060ff;
-  }
 }
 
 /* footer */
@@ -146,14 +142,15 @@ footer {
   padding: 15px;
   gap: 15px;
   background-color: var(--primaryColor);
-}
-footer * {
-  color: var(--lightColor);
-}
-footer a,
-footer p,
-footer li {
-  margin: 0;
+
+  * {
+    color: var(--lightColor);
+  }
+  a,
+  p,
+  li {
+    margin: 0;
+  }
 }
 
 /* introduction */
@@ -172,7 +169,7 @@ footer li {
     font-family: Inter;
     padding: 10px 15px;
     border-radius: 68px;
-    background: #4060ff;
+    background: var(--primaryColor);
     text-decoration: none;
     transition: 0.4s;
   }
@@ -225,6 +222,7 @@ footer li {
 #projects article {
   overflow-x: auto;
   width: 100%;
+  padding: 10px 0;
 }
 
 #projects ul {
@@ -233,10 +231,8 @@ footer li {
   margin: auto 0;
   width: max-content;
 
-  li {
-    * {
-      margin: 0;
-    }
+  li * {
+    margin: 0;
   }
 }
 
@@ -251,20 +247,19 @@ footer li {
   border-radius: 12px;
   background: #fff;
   height: fit-content;
-
-  *:hover {
-    color: var(--primaryColor);
+  * {
+    color: var(--darkColor);
   }
 }
 
+.projectCard:hover {
+  box-shadow: 0 4px 8px rgba(0, 38, 255, 0.1);
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
 /* formatting */
 .colorHighlight {
   color: var(--hightlightColor);
-}
-
-.partialDivider {
-  border-bottom: var(--dottedDivider);
-  margin: 20px 0;
 }
 
 /* computer view */
@@ -277,14 +272,15 @@ footer li {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-  }
-  footer ul {
-    display: contents;
-  }
 
-  footer a,
-  footer p {
-    margin-top: 10px;
-    margin-left: 10px;
+    ul {
+      display: contents;
+    }
+
+    a,
+    p {
+      margin-top: 10px;
+      margin-left: 10px;
+    }
   }
 }
