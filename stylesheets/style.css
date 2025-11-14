@@ -48,7 +48,7 @@ section {
 }
 
 .innerContent {
-  max-width: 1000px;
+  max-width: 1500px;
   margin: auto;
   padding: 0 15px;
 }
@@ -61,6 +61,9 @@ h3 {
   padding-bottom: 0.5rem;
   font-family: "SUSE mono", sans-serif;
   font-style: normal;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  max-width: 100%;
 }
 h1 {
   font-size: 3rem;
@@ -86,6 +89,9 @@ p {
   margin-top: 10px;
   margin-left: 10px;
   line-height: 150%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  max-width: 100%;
 }
 
 li {
@@ -95,6 +101,9 @@ li {
   margin-left: 20px;
   text-transform: capitalize;
   font-size: max(12px, 1cqw);
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  max-width: 100%;
 }
 
 a {
@@ -240,6 +249,7 @@ footer {
 .projectCard {
   display: flex;
   width: 363px;
+  max-width: 363px;
   padding: 20px;
   flex-direction: column;
   align-items: flex-start;
@@ -248,8 +258,12 @@ footer {
   border-radius: 12px;
   background: #fff;
   height: fit-content;
+  box-sizing: border-box;
   * {
     color: var(--darkColor);
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    max-width: 100%;
   }
 }
 
